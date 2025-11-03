@@ -108,3 +108,15 @@ If you check your terminal, you may notice additional information regarding the 
 If you are able to delete a fruit, you have successfully performed your next CRUD operation, **Delete**. Congrats!
 
 With this final route we have full CRUD and all seven RESTful routes on the fruit model! Well done! 🎉
+
+---
+
+<div align="center">
+
+### Next Up 👉
+
+[**Recap**](./recap.md)
+
+</div>
+
+---

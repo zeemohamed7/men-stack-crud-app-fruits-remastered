@@ -29,6 +29,6 @@ In this module, you’ll learn to perform all CRUD operations (Create, Read, Upd
 
 ## Level Up content
 
-| Lesson                                                     |     |     | Skills                          |
-| ---------------------------------------------------------- | :-: | :-: | ------------------------------- |
-| [Style the Application](./style-the-application/README.md) |     |     | Bring your app to life with CSS |
+| Lesson                                                     | Skills                          |
+| ---------------------------------------------------------- | ------------------------------- |
+| [Style the Application](./style-the-application/README.md) | Bring your app to life with CSS |

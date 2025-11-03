@@ -52,7 +52,7 @@ code .
 
 ### Next Up 👉
 
-[**Build and Run `server.js`**](../build-and-run-serverjs/README.md)
+[**Build and Run `server.js`**](./build-and-run-serverjs.md)
 
 </div>
 
