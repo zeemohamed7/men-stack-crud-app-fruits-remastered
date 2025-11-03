@@ -1,12 +1,17 @@
 # ![MEN Stack CRUD App - Fruits](./assets/hero.png)
 
-## Lesson Overview
+## About
 
-Welcome to the Fruits App, a full-stack project that helps learners build a Node.js and Express application structured around the Model–View–Controller (MVC) pattern.
-
-In this module, you’ll learn to perform all CRUD operations (Create, Read, Update, Delete) while keeping your code organized into separate folders for models, views, and controllers.
+Welcome to the "Fruits" App, a comprehensive module for intermediate learners ready to build a full-stack CRUD application. This module covers essential full-stack development skills, focusing on creating, reading, updating, and deleting data in a web application using Node.js, Express, and EJS. It's the perfect next step for those with foundational web development knowledge, who are ready to work with a database for the first time.
 
 ![Fruits App HomePage](./assets/homepage.png)
+
+## Prerequisites
+
+- Intro to Express
+- RESTful Routing
+- EJS
+- Intro to Mongoose
 
 ## Content
 
@@ -29,6 +34,6 @@ In this module, you’ll learn to perform all CRUD operations (Create, Read, Upd
 
 ## Level Up content
 
-| Lesson                                                     | Skills                          |
-| ---------------------------------------------------------- | ------------------------------- |
-| [Style the Application](./style-the-application/README.md) | Bring your app to life with CSS |
+| Lesson                                           | Skills                          |
+| ------------------------------------------------ | ------------------------------- |
+| [Style the Application](./style-the-application) | Bring your app to life with CSS |

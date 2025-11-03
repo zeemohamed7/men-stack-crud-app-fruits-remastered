@@ -85,7 +85,7 @@ exports.fruit_delete_delete = async (req, res) => {
 
 After deleting the fruit, we will redirects the user back to the `index` page `/fruits`, where the deleted fruit will no longer be listed.
 
-## Create the `DELETE /fruits/:fruitId`route
+## Create the `DELETE /fruits/:fruitId` route
 
 To build and test the delete functionality in stages, we'll first create a basic route that sends a confirmation message. Then, we'll refactor it to add the actual delete functionality.
 
