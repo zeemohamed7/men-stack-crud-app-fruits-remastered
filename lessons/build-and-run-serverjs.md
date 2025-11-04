@@ -2,7 +2,7 @@
 
 In this lesson, we’ll create our **main entry point**, set up an **Express server**, and render our first **EJS view**.
 
-## Step 1: Install the Express Module
+## Install the Express Module
 
 Before we begin building our server, let's use `npm` to install the Express module in this project:
 

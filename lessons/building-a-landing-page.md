@@ -2,13 +2,9 @@
 
 In this lesson, you will be able to implement a landing page for a web application using Express and EJS.
 
-## The Landing Page
+# The Landing Page
 
-Every web app typically has a landing page — the first page users see when visiting your site (for example, _mycoolwebapp.com_).  
-In this project, we’ll build our landing page using the **MVC pattern**:
-
-- **Controller** → Handles the request and decides what to show
-- **View (EJS)** → Displays the HTML the user sees
+Every web app typically has a landing page — the first page users see when visiting your site (for example, _mycoolwebapp.com_).
 
 ## Install `ejs` from NPM
 
@@ -27,8 +23,6 @@ To serve our landing page, we'll need to start with a route in our `server.js` f
 This code, as well as all future routes, should be above the `app.listen()` method.
 
 ```javascript
-// server.js
-
 // GET /
 app.get('/', async (req, res) => {
   res.send('hello, friend!')
@@ -75,8 +69,6 @@ Open `index.ejs` and add the following HTML boilerplate and content inside of th
 To show our homepage when a user visits the root `/` of our application, we need to modify the response in the server's route handler. Instead of sending a simple message with `res.send()`, we'll use the `res.render()` method. This method allows us to render our EJS template as HTML.
 
 ```javascript
-// server.js
-
 // GET /
 app.get('/', async (req, res) => {
   res.render('index.ejs')

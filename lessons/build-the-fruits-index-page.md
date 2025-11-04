@@ -53,7 +53,6 @@ With this addition, we're ready to use our `Fruit` model in the request handling
 Add the controller function that handles the logic for showing the "Fruit Index” page:
 
 ```js
-// fruitsController.js
 // Import the Fruit model
 const Fruit = require('./models/Fruit.js')
 
@@ -70,11 +69,9 @@ If you assign properties (like exports.fruit_create_get = ...), both are fine.
 
 But if you ever need to export a single function, class, or object, you must use module.exports = ... instead — because assigning directly to exports would break its link to module.exports.</details>
 
-First, we need to retrieve data from the database. In this case, we are looking for all of the fruits. To accomplish this, we'll use Mongoose's `.find()` method. When called without any arguments, `.find()` retrieves all documents within a collection, returning them as an array.
+First, we need to retrieve data from the database. In this case, we are looking for all of the fruits. To accomplish this, we'll use Mongoose's `.find()` method. When called without any arguments, `.find()` retrieves all documents within a collection, returning them as an array. Because this operation is asynchronous, we use the `await` keyword to pause the code until the query finishes and store the resulting array in the allFruits variable.
 
-In the above snippet, we've modified our route to be an asynchronous function. This allows us to use the `await` keyword to wait for `.find()` to complete its operation and assign the result to the `allFruits` variable.
-
-![Fruits Data Array](./assets/data-array.png)
+![Fruits Data Array](../assets/data-array.png)
 
 Now that we've successfully retrieved the fruit data from our database, our next objective is to display this data to the user.
 
@@ -83,10 +80,10 @@ In our context, dynamic HTML refers to HTML content generated based on data. It'
 We will use `.render()` to respond with a dynamically generated HTML view. The `.render()` method takes two arguments:
 
 ```js
-app.get('/fruits', async (req, res) => {
+exports.fruit_index_get = async (req, res) => {
   const allFruits = await Fruit.find()
-  res.render('fruits/index.ejs', { fruits: allFruits })
-})
+  res.render('fruits/index.ejs', { fruits: allFruits }) // new line
+}
 ```
 
 - The first argument is a `string` specifying the path to the EJS template we wish to render. In our case, it's 'fruits/index.ejs'.
@@ -101,7 +98,6 @@ Inside `routes` folder, create a file for fruit controllers:
 
 ```bash
 touch routes/fruits.js
-
 ```
 
 First, add these two lines to the top of your `fruits.js` file:

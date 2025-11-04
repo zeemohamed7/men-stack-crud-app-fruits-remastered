@@ -62,7 +62,7 @@ MONGODB_URI=mongodb+srv://<username>:<password>@sei.azure.mongodb.net/?retryWrit
 
 > 🚨 Note: Do not use the above connection string in your application, it will not work. Paste the connection string obtained from your personal MongoDB Atlas account.
 
-> Note: It is important that there are no spaces between `MONGODB_URI`, `=`, and your atlas connection string. It should be written as one continuous string with no spaces.
+> 🚨 Note: It is important that there are no spaces between `MONGODB_URI`, `=`, and your atlas connection string. It should be written as one continuous string with no spaces.
 
 This will make the connection string available in our application on the `process.env.MONGODB_URI` property.
 
@@ -87,8 +87,6 @@ With our environment variables added, we need to require the `dotenv` package in
 At the **_top_** of your `server.js` file, add:
 
 ```js
-//server.js
-
 const dotenv = require('dotenv') // require package
 dotenv.config() // Loads the environment variables from .env file
 ```
